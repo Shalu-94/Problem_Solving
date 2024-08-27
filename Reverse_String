@@ -1,0 +1,21 @@
+package problems_solving;
+import java.util.*;
+import java.util.Scanner;
+public class RevString {
+
+	public static void main(String[] args) {
+       
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String:");
+		String text=sc.nextLine();
+		int j,len;
+		String rev="";
+		len=text.length();
+		for(j=len-1;j>=0;j--) {
+			rev+=text.charAt(j);
+		}
+		System.out.println("Reversed String is:"+rev);
+		}
+
+	}
+
